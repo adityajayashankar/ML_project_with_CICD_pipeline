@@ -9,6 +9,9 @@ from dataclasses import dataclass
 
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
+
+from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer import ModelTrainerConfig
 #the entire thing below is an input to my data_ingestion component
 @dataclass #will be able to directly define class variable 
 class DataIngestionConfig:
@@ -43,5 +46,11 @@ class DataIngestion:
    raise CustomException(e,sys) #if there is any error in the above code, it will raise a custom exception with the error message and the system information
 if __name__== "__main__":
  obj = DataIngestion()
- obj.initiate_data_ingestion() #calling the initiate_data_ingestion function to read the data from the csv file and split it into train and test set
+ train_data, test_data = obj.initiate_data_ingestion() #calling the initiate_data_ingestion function to read the data from the csv file and split it into train and test set
 #this is the main function which will be called when the script is run
+
+data_transformation = DataTransformation()
+train_arr, test_arr, _ = data_transformation.initiate_data_transformation(train_data, test_data)
+
+model_trainer = ModelTrainer()
+print(model_trainer.initiate_model_trainer(train_arr, test_arr))
