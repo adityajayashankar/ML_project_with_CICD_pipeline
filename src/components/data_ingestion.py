@@ -1,10 +1,14 @@
 import os
 import sys
+
 from  src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 #the entire thing below is an input to my data_ingestion component
 @dataclass #will be able to directly define class variable 
 class DataIngestionConfig:
@@ -35,7 +39,7 @@ class DataIngestion:
     self.ingestion_config.test_data_path,
    
    )
-  except:
+  except Exception as e:
    raise CustomException(e,sys) #if there is any error in the above code, it will raise a custom exception with the error message and the system information
 if __name__== "__main__":
  obj = DataIngestion()
