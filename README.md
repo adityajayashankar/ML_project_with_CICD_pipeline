@@ -1,7 +1,6 @@
 # 🎯 Student Performance Prediction – End-to-End ML Pipeline with CI/CD
 
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
-![CI/CD](https://github.com/adityajayashankar/ML-project/actions/workflows/main.yml/badge.svg)
 ![Render](https://img.shields.io/badge/Deployed%20on-Render-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -36,23 +35,23 @@ This project is an end-to-end machine learning pipeline designed to predict stud
 
 ## 📁 Project Structure
 
-├── app.py # Flask application
-├── Dockerfile # Docker config
-├── requirements.txt # Project dependencies
-├── templates/
-│ ├── home.html # Prediction form
-│ └── index.html # Landing page
-├── artifacts/ # Stores models, preprocessor, datasets
-├── src/
-│ ├── components/ # Data ingestion, transformation, training
-│ ├── pipeline/
-│ │ ├── predict_pipeline.py # Prediction logic
-│ │ └── train_pipeline.py # Training logic
-│ ├── utils.py # Helper functions
-│ ├── logger.py # Logs setup
-│ └── exception.py # Custom error handling
-├── .github/workflows/
-│ └── main.yml # GitHub Actions for CI/CD
+├── app.py # Flask application <br>
+├── Dockerfile # Docker config <br>
+├── requirements.txt # Project dependencies <br>
+├── templates/ <br>
+│ ├── home.html # Prediction form <br>
+│ └── index.html # Landing page <br>
+├── artifacts/ # Stores models, preprocessor, datasets <br>
+├── src/ <br>
+│ ├── components/ # Data ingestion, transformation, training <br>
+│ ├── pipeline/ <br>
+│ │ ├── predict_pipeline.py # Prediction logic <br>
+│ │ └── train_pipeline.py # Training logic <br>
+│ ├── utils.py # Helper functions <br>
+│ ├── logger.py # Logs setup <br>
+│ └── exception.py # Custom error handling <br>
+├── .github/workflows/ <br>
+│ └── main.yml # GitHub Actions for CI/CD <br>
 
 yaml
 Copy
