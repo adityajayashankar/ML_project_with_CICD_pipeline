@@ -1,6 +1,7 @@
 # 🎯 Student Performance Prediction – End-to-End ML Pipeline with CI/CD
 
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
+![CI/CD](https://github.com/adityajayashankar/ML-project/actions/workflows/main.yml/badge.svg)
 ![Render](https://img.shields.io/badge/Deployed%20on-Render-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
