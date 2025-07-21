@@ -1,7 +1,8 @@
 import pickle
-from flask import Flask, request,  render_template
+from flask import Flask, request,  render_template, redirect,  url_for
 import numpy as np
 import pandas as pd
+import os
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
@@ -16,7 +17,7 @@ app = application
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return redirect(url_for('predict_datapoint'))
 
 
 @app.route('/predictdata', methods=['GET','POST'])
@@ -46,5 +47,8 @@ def predict_datapoint():
 
         return render_template('home.html', results=results[0])
     
+
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug = True, port = 5000) #host is set to
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", debug=True, port=port)
