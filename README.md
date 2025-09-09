@@ -1,4 +1,4 @@
-# 🎯 Student Performance Prediction – End-to-End ML Pipeline with CI/CD
+#  Student Performance Prediction – End-to-End ML Pipeline with CI/CD
 
 <p align="center">
   <a href="https://www.python.org/">
@@ -18,7 +18,7 @@
 
 ## 🚀 Live Demo
 
-👉 [Click here to open the app](https://ml-project-with-deployment-z5u7.onrender.com)
+ [Click here to open the app](https://ml-project-with-deployment-z5u7.onrender.com)
 
 ---
 
@@ -26,10 +26,10 @@
 
 This project is an end-to-end machine learning pipeline designed to predict student performance based on demographic and academic features. It includes:
 
-- 🔄 Data ingestion, preprocessing, model training
-- 📦 Flask web app with prediction form
-- 🐳 Docker containerization
-- 🚀 Deployment on **Render** with **CI/CD** via GitHub Actions
+-  Data ingestion, preprocessing, model training
+-  Flask web app with prediction form
+-  Docker containerization
+-  Deployment on **Render** with **CI/CD** via GitHub Actions
 
 ---
 
@@ -124,4 +124,5 @@ Licensed under the MIT License.
 
 
   
+
 
