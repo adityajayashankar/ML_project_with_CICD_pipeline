@@ -22,7 +22,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project is an end-to-end machine learning pipeline designed to predict student performance based on demographic and academic features. It includes:
 
@@ -33,7 +33,7 @@ This project is an end-to-end machine learning pipeline designed to predict stud
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - Python 3.8
 - Scikit-learn
@@ -45,7 +45,7 @@ This project is an end-to-end machine learning pipeline designed to predict stud
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ├── app.py # Flask application <br>
 ├── Dockerfile # Docker config <br>
@@ -71,7 +71,7 @@ Edit
 
 ---
 
-## 🧪 How to Run Locally
+## How to Run Locally
 
 ```bash
 # 1. Clone the repository
@@ -90,22 +90,22 @@ pip install -r requirements.txt
 python app.py
 Open http://127.0.0.1:5000/predictdata in your browser.
 
-📦 Docker Usage
+Docker Usage
 bash
 Copy
 Edit
 docker build -t mlproject-app .
 docker run -p 5000:5000 mlproject-app
-🔁 CI/CD with GitHub Actions
+ CI/CD with GitHub Actions
 Every push to main triggers:
 
-✅ Automated testing
+ Automated testing
 
-🚀 Build and deployment to Render
+ Build and deployment to Render
 
 Workflow file: .github/workflows/main.yml
 
-🧠 Model Info
+ Model Info
 Input Features: Gender, Ethnicity, Parental Education, Lunch, Test Prep, Reading & Writing Scores
 
 Output: Predicted Math Score
@@ -114,13 +114,14 @@ Models Used: Linear Regression, Random Forest, XGBoost, CatBoost
 
 Best R² Score: ~85%
 ```
-# 📬 Contact
-📧 Email: adityajayashankar@gmail.com
+#  Contact
+ Email: adityajayashankar@gmail.com
 
-🌐 GitHub: @adityajayashankar
+ GitHub: @adityajayashankar
 
-# 📄 License
+#  License
 Licensed under the MIT License.
 
 
   
+
